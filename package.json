@@ -16,7 +16,9 @@
   "scripts": {
     "test": "wdio run ./config/wdio.conf.js",
     "test:ios": "wdio run ./wdio.ios.conf.js",
-    "wdio": "wdio run ./wdio.conf.js"
+    "wdio": "wdio run ./wdio.conf.js",
+    "posttest": "npm run report",
+    "report": "allure generate allure-results"
   },
   "dependencies": {
     "allure-commandline": "^2.33.0",
