@@ -13,7 +13,8 @@
     "typescript": "^5.8.2"
   },
   "scripts": {
-    "test": "wdio run ./wdio.conf.js"
+    "test": "wdio run ./wdio.conf.js",
+    "test:ios": "wdio run ./wdio.ios.conf.js"
   },
   "dependencies": {
     "allure-commandline": "^2.33.0"

@@ -6,9 +6,10 @@ import profilePage from '../pageobjects/profile.page.js'
 
 describe('My Login application', () => {
     it('should login with valid credentials', async () => {
-        await homePage.openMenu('profile')
+        let profileTab = driver.isAndroid ? 'profile' : 'Account';
+        await homePage.openMenu(profileTab);
         await loginPage.login('kevin@ebac.com', '123456')
-        await homePage.openMenu('profile')
+        await homePage.openMenu(profileTab)
         expect((await profilePage.profileName('fonseca kevin')).isDisplayed()).toBeTruthy()
     })
 })
