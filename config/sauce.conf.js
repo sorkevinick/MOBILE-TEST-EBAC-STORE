@@ -27,7 +27,7 @@ export let sauceConf = {
             'appium:platformVersion': '17.0',
             'appium:automationName': 'XCUITest',
             'sauce:options': {
-                'appiumVersion': '2.1.3',
+                // 'appiumVersion': '2.1.3',
                 'build': 'Build_12345',
                 'name': 'Teste_LojaEBAC_iOS',
                 'deviceOrientation': 'PORTRAIT'
