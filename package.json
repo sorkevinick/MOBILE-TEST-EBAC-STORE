@@ -17,6 +17,7 @@
     "test:ios": "wdio run ./wdio.ios.conf.js"
   },
   "dependencies": {
-    "allure-commandline": "^2.33.0"
+    "allure-commandline": "^2.33.0",
+    "dotenv": "^16.4.7"
   }
 }
