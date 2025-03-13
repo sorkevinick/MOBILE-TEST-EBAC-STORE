@@ -8,13 +8,15 @@
     "@wdio/mocha-framework": "^9.11.0",
     "@wdio/spec-reporter": "^9.11.0",
     "@wdio/visual-service": "^6.3.2",
+    "appium": "^2.17.0",
     "appium-uiautomator2-driver": "^4.1.1",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.2"
   },
   "scripts": {
-    "test": "wdio run ./wdio.conf.js",
-    "test:ios": "wdio run ./wdio.ios.conf.js"
+    "test": "wdio run ./config/wdio.conf.js",
+    "test:ios": "wdio run ./wdio.ios.conf.js",
+    "wdio": "wdio run ./wdio.conf.js"
   },
   "dependencies": {
     "allure-commandline": "^2.33.0",

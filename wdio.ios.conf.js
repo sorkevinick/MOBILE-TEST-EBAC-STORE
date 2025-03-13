@@ -65,9 +65,5 @@ export const config = {
         ui: 'bdd',
         timeout: 60000
     },
-    afterTest: async function(test, context, { error, result, duration, passed, retries }) {
-       
-        await driver.takeScreenshot();
-       
-    },
+
 }
